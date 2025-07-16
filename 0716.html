@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 연습</title>
+        <style>
+            *  {margin: 0;
+                padding: 0; 
+                box-sizing: border-box;}
+
+            html, body { scroll-behavior: smooth;}
+            body {
+            background-color:#fff;
+            height: 3000px;   
+        }
+           .container  { 
+            position: relative; /*부모*/
+            width:  375px; 
+            height: 412px; 
+            border: 1px solid #333;
+            border-radius: 12px; 
+            margin: 100px auto; /* top right */
+            padding: 6px, 16px; 
+            display:flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column; 
+            gap:20px;}
+            .editBtn {
+                position: absolute;
+                left: 40px;
+                top: 40px
+            }
+            .btnTop{
+                position: fixed;
+                right: 40px;
+                bottom: 40px;
+                background-color: red;
+                color: #fff;
+                width: 60px; height: 60px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .btnTop:hover {
+                background-color: dodgerblue;
+            }
+
+            button {
+                background-color: transparent;
+                border:none;
+            }
+            
+        </style>
+        
+</head>
+<body>
+    <div class="container"> 
+        <button type="button" class="editBtn">Edit</button>
+        <button type="button"> 
+            <img src="images/icon/home.png" alt="home">
+        </button>
+        <button type="button">
+            <img src="images/icon/calender.png" alt="calender">
+        </button>
+        <button tyep="button">
+            <img src="images/icon/setting.png" alt="setting">
+        </button>
+    </div>
+
+    <a href="#" class="btnTop">TOP</a>
+</body>
+</html>
