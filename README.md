@@ -13,7 +13,7 @@
 - 필수요소처리 속성 : required
 - 폼요서의 사용자가 입력한 값은 value, 안내글 placeholer
 - 드롭다운메뉴 : select (with opction)
-- 글자 입력 input에 필요한 디자인은 : defauit, focus, warnind(required or error)
+- 글자 입력 input에 필요한 디자인은 : defauit, focus, warnind(required or error or success)
 - 텍스트 디자인시 고려해야할 것 : 글자의 길이 및 말줄임여부
 - 썸네일로 이미지 입력시 : contain(figma:fit), cover(figma:fill), repeat(tile)
 - 앱의 기능별 flow를 그려보면서 와이어프레임 만들어보기(ToDoList:작성, 수정, 삭제, 보기)
