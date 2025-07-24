@@ -22,13 +22,19 @@
                 count = count +1 ;
                 num.textContent = count;
                 msg.textContent = '범위 내의 값입니다.'
-            }
-    
-            else { msg.textContent = '-10이 최소값입니다.'}
+            } else 
+                (msg.textContent = '-10이 최소값입니다.')
+            
+            
                   
             }   
-    function decreaseNumber(){ 
-
+        function decreaseNumber(){ 
+            if (count > -10){
+                count = count -1 ;
+                num.textContent = count;
+                msg.textContent = '범위 내의 값입니다.'
+            } else 
+                (msg.textContent = '-10이 최소값입니다.')
     }
     </script>
 
