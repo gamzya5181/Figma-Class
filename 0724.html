@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF문 이해하기</title>
+</head>
+<body>
+    <h1 id="massage">hello world</h1>
+    <p id="number">0</p>
+    <button type="button" id="decrease" onclick="decreaseNumber()">-</button>
+     <button type="button" id="increase" onclick="increaseNumber()">+</button>
+    <script>
+        const msg = document.getElementById('massage');
+        const num = document.getElementById('number');
+        const dec = document.getElementById('decrease');
+        const inc = document.getElementById('increase');
+        let count = 0;
+
+        function increaseNumber(){
+            if (count < 10){
+                count = count +1 ;
+                num.textContent = count;
+                msg.textContent = '범위 내의 값입니다.'
+            }
+    
+            else { msg.textContent = '-10이 최소값입니다.'}
+                  
+            }   
+    function decreaseNumber(){ 
+
+    }
+    </script>
+
+</body>
+</html>
